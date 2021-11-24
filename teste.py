@@ -113,3 +113,4 @@ def draw_text(text, fonte, color, surface, x, y):
     textrect = textobj.get_rect()
     textrect.topleft = (x, y)
     surface.blit(textobj, textrect)
+    

@@ -51,7 +51,7 @@ def main():
         fps = int(clock.get_fps())
         pygame.display.set_caption("Ping Pong - " + "FPS: " + str(fps))
 
-        screen.fill((36, 41, 43))
+        screen.fill((52, 63, 82))
 
         if game.enemy_point >= 5:
             game.gameover = True
