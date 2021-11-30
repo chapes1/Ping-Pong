@@ -11,8 +11,8 @@ speed = 5
 aleatorio = random.randint(0, 1)
 enemy_height = 100
 player_height = 100
-width_ball = 22
-height_ball = 22
+width_ball = 15
+height_ball = 15
 
 class Game():
     def __init__(self, *groups):
@@ -99,6 +99,10 @@ class Game():
                 enemy.y -= speed
             elif enemy.y < int(screen.get_height()/2 - enemy_height/2) - 5:
                 enemy.y += speed
+    
+        
+    def button_down(self):
+        pass
 
     def update(self, Ball, enemy, Player1, screen):
         if not self.player_ia_active:
